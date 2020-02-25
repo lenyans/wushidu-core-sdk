@@ -1,0 +1,22 @@
+{
+    "name": "wangchao/wushidu-core-sdk",
+    "type": "library",
+    "require": {
+        "php": "^7.3",
+        "rmccue/requests": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "wushidu\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lenyans",
+            "email": "chao_wang@126.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "description": "wushidu-core-server sdk"
+}
