@@ -17,4 +17,5 @@ $res = $wushidu->contentSafe()->textScan([
 ]);
 
 print_r($res);
+
 ```
