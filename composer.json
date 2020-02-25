@@ -1,5 +1,5 @@
 {
-    "name": "wangchao/wushidu-core-sdk",
+    "name": "lenyans/wushidu-core-sdk",
     "type": "library",
     "require": {
         "php": "^7.3",
