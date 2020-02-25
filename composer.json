@@ -2,7 +2,7 @@
     "name": "lenyans/wushidu-core-sdk",
     "type": "library",
     "require": {
-        "php": "^7.3",
+        "php": ">=7.1.0",
         "rmccue/requests": "dev-master"
     },
     "autoload": {

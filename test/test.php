@@ -15,8 +15,8 @@ $wushidu = \wushidu\WushiduCore::getInstance([
 ]);
 
 $res = $wushidu->contentSafe()->textScan([
-    'text1',
-    'text2',
+    '文本1',
+    '文本2',
 ]);
 
 print_r($res);
