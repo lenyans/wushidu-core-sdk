@@ -17,6 +17,5 @@
             "email": "chao_wang@126.com"
         }
     ],
-    "minimum-stability": "dev",
     "description": "wushidu-core-server sdk"
 }
