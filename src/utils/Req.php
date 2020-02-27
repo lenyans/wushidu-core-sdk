@@ -30,7 +30,6 @@ class Req
         $data = $data ? (is_array($data) ? Aes::encrypt(json_encode($data), $this->config->app_secret) : $data) : null;
         try {
             $body = \Requests::post($this->buildUrl($path), $headers, $data, $options)->body;
-            print_r($body);
             return Res::json2res($body);
         } catch (\Exception $e) {
             return Res::fail($e->getMessage());
