@@ -30,13 +30,15 @@ class ContentSafe
      * 文本检测
      * @param array $texts
      * @param string $type_tag
+     * @param array $params
      * @return Res
      */
-    public function textScan(array $texts = [], string $type_tag = '')
+    public function textScan(array $texts = [], string $type_tag = '', array $params = [])
     {
         return (new Req($this->config))->post('/api/ContentSafe/textScan', [], [
             'texts' => $texts,
             'type_tag' => $type_tag,
+            'params' => $params,
         ]);
     }
 }

@@ -11,10 +11,12 @@ $wushidu = \wushidu\WushiduCore::getInstance([
 ]);
 
 // 调用文字检测
+// 参数1：字符串数组
+// 参数2：类型标记
 $res = $wushidu->contentSafe()->textScan([
     '文本1',
     '文本2',
-]);
+], 'default');
 
 print_r($res);
 
