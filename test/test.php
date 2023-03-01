@@ -22,6 +22,6 @@ $wushidu = \wushidu\WushiduCore::getInstance([
 //    'is_test' => 1,
 //]);
 
-$res = $wushidu->sms()->sendSms('15191333072', '1234');
+$res = $wushidu->sms()->sendSms('18166666629', '1234');
 
 echo json_encode($res, JSON_UNESCAPED_UNICODE);

@@ -26,7 +26,7 @@ class ContentSafe extends Base
      * @param array $params
      * @return Res
      */
-    public function textScan(array $texts = [], string $type_tag = '', array $params = [])
+    public function textScan(array $texts = [], string $type_tag = null, array $params = [])
     {
         return (new Req($this->config))->post('/api/ContentSafe/textScan', [], [
             'texts' => $texts,

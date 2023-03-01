@@ -19,12 +19,20 @@ use wushidu\utils\Req;
  */
 class Sms extends Base
 {
-    public function sendSms(string $phone_number = '', string $code = '', array $params = [])
+    /**
+     * @param string 手机号 $phone_number
+     * @param string 验证码 $code
+     * @param array 额外参数 $params
+     * @param string|null 短信模板 $tpl
+     * @return \wushidu\utils\Res
+     */
+    public function sendSms(string $phone_number = null, string $code = null, array $params = [], string $tpl = null)
     {
         return (new Req($this->config))->post('/api/sms/sendSms', [], [
             'phone_number' => $phone_number,
             'code' => $code,
             'params' => $params,
+            'tpl' => $tpl,
         ]);
     }
 }

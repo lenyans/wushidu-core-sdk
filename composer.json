@@ -4,7 +4,8 @@
     "require": {
         "php": ">=7.1.0",
         "rmccue/requests": "^1.7",
-      "ext-json": "*"
+      "ext-json": "*",
+      "ext-openssl": "*"
     },
     "autoload": {
         "psr-4": {
